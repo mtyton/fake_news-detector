@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method=post>
+  <dl>
+    {{ render_field(form.title) }}
+    {{ render_field(form.text) }}
+  </dl>
+  <p><input type=submit value="Check if Fake">
+</form>
+{% endblock %}
+
+
+
